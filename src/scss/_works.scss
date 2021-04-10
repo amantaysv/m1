@@ -9,7 +9,6 @@
       background: #000 url(../images/konf.jpg) center left / contain no-repeat;
       margin: 0 auto;
       transform: skewY(-3deg);
-      // overflow: hidden;
 
       &::before {
          content: '';
@@ -93,10 +92,6 @@
          padding: 50px;
          border: 5px solid orange;
          border-radius: 50%;
-
-         &:hover {
-            border-color: white;
-         }
       }
 
       &-text {
@@ -108,5 +103,6 @@
    .vanta-canvas {
       width: 100vw;
       height: 60vh;
+      transform: skewY(-3deg);
    }
 }

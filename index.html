@@ -13,7 +13,9 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#home" class="navbar-brand">M1</a>
+            <a href="#home" class="navbar-brand">
+                <i class="fab fa-apple"></i>
+                M1</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -30,7 +32,7 @@
                     <span>\\</span>
                     <li class="nav-item"><a href="#" class="nav-link">blog</a></li>
                     <span>\\</span>
-                    <li class="nav-item"><a href="#" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -182,19 +184,19 @@
 
                 </div>
                 <div class="quote__text">
-                    <div class="quote__text-1"> Хащальме щельдерьме ващальме </div>
-                    <div data-aos="zoom-out-down" class="quote__text-2">Ⓒ Konfucii </div>
+                    <div data-aos="zoom-out-down" class="quote__text-1"> Хащальме щельдерьме ващальме </div>
+                    <div data-aos="zoom-out-up" class="quote__text-2">Ⓒ Konfucii </div>
                 </div>
             </div>
         </section>
-
         <section class="team" id="team">
             <div class="container">
-                <div class="team__heading">
+                <div data-aos="fade-down-right" data-aos-duration="2000" class="team__heading">
                     <div class="title">Team</div>
-                    <div class="descr">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis
-                        bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit
-                        amet nibh vulputate cursus a sit amet</div>
+                    <div class="descr">sdelaem bistro, dorogo, kachestvenno
+                        <br>
+                        otvechaem
+                    </div>
                 </div>
                 <div class="row">
                     <div data-aos-duration="2000" data-aos="fade-right" data-aos-offset="300" class="col">
@@ -205,7 +207,7 @@
                             <div class="name">Amantay</div>
                             <div class="prof">Team-Lead</div>
                             <div class="line"></div>
-                            <div class="descr"></div>
+                            <div class="descr">Esli kto sprosit ya Webka</div>
                             <div class="social">
                                 <a href="https://twitter.com/amantay_sv" class="icon" target="_blank"><i
                                         class="fab fa-twitter"></i></a>
@@ -245,7 +247,7 @@
                                 <img class="team__img" src="./src/images/team/said.jpeg" alt="">
                             </div>
                             <div class="name">Said</div>
-                            <div class="prof">Developer</div>
+                            <div class="prof">Ex-Developer</div>
                             <div class="line"></div>
                             <div class="descr">Net nichego vajnee sna😴</div>
                             <div class="social">
@@ -278,34 +280,39 @@
                 </div>
             </div>
         </section>
-
         <section class="works" id="works">
             <div class="container-fluid">
                 <div class="works__text d-flex justify-content-around w-100">
-                    <div class="works__card">
-                        <div class="works__card-circle">
-                            <img src="./src/images/icon/stack.svg" alt="CUP">
-                        </div>
+                    <div data-aos-duration="2000" data-aos="fade-down-right" class="works__card">
+                        <a href="https://github.com/amantaysv?tab=repositories" target="_blank">
+                            <div class="works__card-circle">
+                                <img src="./src/images/icon/stack.svg" alt="CUP">
+                            </div>
+                        </a>
                         <div class="works__card-text">
                             26+
                             <br>
                             Projects
                         </div>
                     </div>
-                    <div class="works__card">
-                        <div class="works__card-circle">
-                            <img src="./src/images/icon/user.svg" alt="CUP">
-                        </div>
+                    <div data-aos-duration="2000" data-aos="fade-down" class="works__card">
+                        <a href="">
+                            <div class="works__card-circle">
+                                <img src="./src/images/icon/user.svg" alt="CUP">
+                            </div>
+                        </a>
                         <div class="works__card-text">
                             100+
                             <br>
                             Clients
                         </div>
                     </div>
-                    <div class="works__card">
-                        <div class="works__card-circle">
-                            <img src="./src/images/icon/like.svg" alt="CUP">
-                        </div>
+                    <div data-aos-duration="2000" data-aos="fade-down-left" class="works__card">
+                        <a href="">
+                            <div class="works__card-circle">
+                                <img src="./src/images/icon/like.svg" alt="CUP">
+                            </div>
+                        </a>
                         <div class="works__card-text">
                             73+
                             <br>
@@ -316,8 +323,73 @@
                 <canvas class="vanta-canvas"></canvas>ƒ
             </div>
         </section>
+        <section class="contacts" id="contacts">
+            <div class="container">
+                <div data-aos-duration="2000" data-aos="zoom-in" class="contacts__heading">
+                    <div class="title">Contacts</div>
+                    <div class="descr">tebe skuchno? tebe odinoko? <br> ostavlyai zayavku i mi tebe pozvonim 😉</div>
+                </div>
+                <div class="row">
+                    <div data-aos-duration="2000" data-aos="fade-down-right" class="col">
+                        <h5 class="contacts__title">
+                            Ostav' zayavku, po-bratski
+                        </h5>
+                        <form class="contacts__form">
+                            <div class="inputs">
+                                <label class="content">
+                                    <input autocomplete="off" type="text" class="input" id="username" minlength="3"
+                                        placeholder="Ваше имя" required>
+                                    <ul class="input-requirements">
+                                        <li>Минимум 3 символа</li>
+                                        <li>Должен содержать только буквы и цифры (без специальных символов)</li>
+                                    </ul>
+                                </label>
+                                <label class="content">
+                                    <input autocomplete="off" type="email" class="input" id="email"
+                                        placeholder="Ваш email" required>
+                                </label>
+                                <label class="content">
+                                    <textarea class="input comment" placeholder="Введите сообщение..."></textarea>
+                                </label>
+                            </div>
+                            <button class="contacts__btn">Отправить</button>
+                        </form>
+                    </div>
+                    <div data-aos-duration="2000" data-aos="fade-down-left" class="col">
+                        <h5 class="contacts__title">
+                            Kak nas naiti
+                        </h5>
+                        <p class="contacts__descr">
+                            nas tyajelo naiti, <br> legko poteryat, <br> nevozmojno zabit
+                        </p>
+                        <p class="contacts__text">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Ryskulova 79b
+                        </p>
+                        <p class="contacts__text">
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:996556083082">+996556083082 ,</a>
+                            <a href="tel:996551323878">+996551323878</a>
+                        </p>
+                        <p class="contacts__text">
+                            <i class="far fa-envelope"></i>
+                            bishkekOPG@autoritet.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-
+    <footer class="footer">
+        <div class="container-fluid">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.7192863564!2d74.59398171536428!3d42.87876877915538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb73ef59391dd%3A0xd9a25f1216632551!2zSVQtUlVOIC0g0LDQutCw0LTQtdC80LjRjyDQv9GA0L7Qs9GA0LDQvNC80LjRgNC-0LLQsNC90LjRjyDQvNC10LbQtNGD0L3QsNGA0L7QtNC90L7Qs9C-INGB0YLQsNC90LTQsNGA0YLQsA!5e0!3m2!1sru!2skg!4v1618059393716!5m2!1sru!2skg"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <p class="footer__text">
+                Ⓒ2021, vse prava zashisheni kankretni samim Beknazarom ☝️
+            </p>
+        </div>
+    </footer>
     <script src="./src/libs/jquery/jquery.min.js"></script>
     <script src="./src/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./src/js/three.min.js"></script>
@@ -325,6 +397,7 @@
     <script src="./src/js/vanta.globe.min.js"></script>
     <script src="./src/js/vanta.topology.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//code.jivosite.com/widget/ZWyGwIM3It" async></script>
     <script src="./src/js/main.js"></script>
 </body>
 

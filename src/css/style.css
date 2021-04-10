@@ -30,14 +30,16 @@ body {
 
 .header .navbar {
   text-transform: uppercase;
-  color: #fff;
+  color: #c0c0c0;
 }
 
 .header .navbar-brand {
   position: relative;
   font-size: 45px;
-  color: #fff;
   margin-right: 15rem;
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .header .navbar-brand:hover {
@@ -84,7 +86,7 @@ body {
 }
 
 .home {
-  padding-top: 280px;
+  padding-top: 350px;
   padding-right: calc(20px + 180 * ((100vw - 320px) / 1600));
   padding-left: calc(20px + 180 * ((100vw - 320px) / 1600));
   min-height: 100vh;
@@ -632,10 +634,6 @@ body {
   border-radius: 50%;
 }
 
-.works__card-circle:hover {
-  border-color: white;
-}
-
 .works__card-text {
   margin-top: 15px;
   font-size: 30px;
@@ -645,6 +643,9 @@ body {
 .works .vanta-canvas {
   width: 100vw;
   height: 60vh;
+  -webkit-transform: skewY(-3deg);
+      -ms-transform: skewY(-3deg);
+          transform: skewY(-3deg);
 }
 
 .team {
@@ -658,7 +659,7 @@ body {
   text-transform: uppercase;
   max-width: 1041px;
   margin: 0 auto 150px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
 }
 
 .team__heading .title {
@@ -775,5 +776,176 @@ body {
 .team__img {
   width: 100%;
   border-radius: 50%;
+}
+
+.contacts {
+  margin-top: 99px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.contacts__title {
+  text-transform: uppercase;
+  color: #000;
+  margin: 100px 0 20px;
+}
+
+.contacts__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-transform: uppercase;
+  max-width: 1041px;
+  margin: 0 auto 150px;
+  margin-bottom: 0;
+}
+
+.contacts__heading .title {
+  font-weight: 600;
+  font-size: 30px;
+  margin-right: 40px;
+}
+
+.contacts__heading .descr {
+  position: relative;
+  color: #4d4d4d;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.contacts__heading .descr::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 46px;
+  top: 0;
+  left: -23px;
+  background: #f39c12;
+}
+
+.contacts__descr {
+  text-transform: uppercase;
+  color: #535353;
+}
+
+.contacts__form {
+  background-color: white;
+  border-radius: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 380px;
+  width: 400px;
+}
+
+.contacts .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50%;
+}
+
+.contacts .content {
+  margin: 5px auto;
+  width: 100%;
+}
+
+.contacts__btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  border: 1px solid #a0a0a0;
+  border-radius: 8px;
+  color: #707981;
+  height: 40px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.contacts__btn:hover {
+  background-color: #ff9d00;
+  cursor: pointer;
+  color: #fff;
+}
+
+.contacts .input {
+  border-radius: 8px;
+  border: 1px solid #a0a0a0;
+  font-size: 16px;
+  height: 40px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 10px 15px;
+}
+
+.contacts .input:focus {
+  outline: none;
+  border: 1px solid #f39c12;
+}
+
+.contacts .input-requirements {
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  list-style: disc;
+  list-style-position: inside;
+  margin: 5px 5px 0 5px;
+  color: #707981;
+}
+
+.contacts .comment {
+  height: 105px;
+  margin: 10px auto;
+  resize: none;
+}
+
+.contacts input:valid:required {
+  border: 2px solid #2ecc71;
+}
+
+.contacts input + .input-requirements {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: .6s ease-out;
+  -o-transition: .6s ease-out;
+  transition: .6s ease-out;
+}
+
+.contacts input:hover + .input-requirements,
+.contacts input:focus + .input-requirements,
+.contacts input:active + .input-requirements {
+  max-height: 100px;
+  -webkit-transition: .6s ease-in;
+  -o-transition: .6s ease-in;
+  transition: .6s ease-in;
+}
+
+.footer {
+  padding: 50px 0 20px;
+  margin: 0 auto;
+}
+
+.footer iframe {
+  -webkit-transform: skewY(-3deg);
+      -ms-transform: skewY(-3deg);
+          transform: skewY(-3deg);
+}
+
+.footer__text {
+  margin-top: 50px;
+  text-align: center;
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=style.css.map */

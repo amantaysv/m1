@@ -1,0 +1,12 @@
+.footer {
+   padding: 50px 0 20px;
+   margin: 0 auto;
+   iframe {
+      transform: skewY(-3deg);
+   }
+   &__text {
+      margin-top: 50px;
+      text-align: center;
+      text-transform: uppercase;
+   }
+}

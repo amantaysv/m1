@@ -7,16 +7,19 @@
 
     .navbar {
         text-transform: uppercase;
-        color: #fff;
+        color: #c0c0c0;
 
         &-brand {
             position: relative;
             font-size: 45px;
-            color: #fff;
             margin-right: 15rem;
+            background: -webkit-linear-gradient(#eee, #333);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
 
             &:hover {
                 color: #FF4500;
+
                 &::before {
                     border-color: #FF4500;
                 }
@@ -47,12 +50,14 @@
 
             .nav-link {
                 color: #fff;
+
                 &:hover {
                     color: #FF4500;
                 }
+
                 &:focus {
                     color: #FF4500;
-                    
+
                 }
             }
         }
