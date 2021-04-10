@@ -3,6 +3,7 @@
 
     &__heading {
         @include heading;
+        margin-bottom: 20px;
     }
 
     .row {

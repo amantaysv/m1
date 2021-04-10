@@ -1,10 +1,12 @@
 @import url(../libs/bootstrap/css/bootstrap.min.css);
 @import url(../libs/fonawesome/css/all.min.css);
+@import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -22,4 +24,5 @@ body {
 @import "../scss/about";
 @import "../scss/skills";
 @import "../scss/quote";
+@import "../scss/works";
 @import "../scss/team";
