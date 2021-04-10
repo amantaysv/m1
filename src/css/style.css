@@ -823,6 +823,10 @@ body {
   background: #f39c12;
 }
 
+.contacts__icon {
+  color: #f39c12;
+}
+
 .contacts__descr {
   text-transform: uppercase;
   color: #535353;

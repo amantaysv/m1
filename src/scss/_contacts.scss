@@ -12,7 +12,9 @@ padding-top: 50px;
       @include heading;
       margin-bottom: 0;
    }
-
+&__icon {
+   color: $orange;
+}
    &__descr {
       text-transform: uppercase;
       color: rgb(83, 83, 83);
