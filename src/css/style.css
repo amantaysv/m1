@@ -293,6 +293,8 @@ body {
 .about .row .col .img__bg {
   width: 100%;
   border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .about-skills-img {
