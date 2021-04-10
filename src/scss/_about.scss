@@ -1,0 +1,130 @@
+.about {
+    margin-top: 35px;
+    padding-top: 63px;
+
+    &__heading {
+        @include heading;
+    }
+
+    .row {
+        .col {
+            align-self: center;
+
+            .wrapper {
+                padding-left: 50px;
+                display: flex;
+                align-items: center;
+
+                &__text {
+                    &-1 {
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    &-2 {
+                        font-size: 16px;
+                        margin-top: 22px;
+                        color: $grey;
+
+                        span {
+                            font-size: 20px;
+                            color: #E74C3C;
+                        }
+                    }
+                }
+
+                .img__bulb {
+                    margin: 51px 78px 0 0;
+                    position: relative;
+                    width: 29px;
+                    height: 41px;
+
+                    &::before {
+                        @include ellipse();
+                    }
+                }
+
+                .img__params {
+                    margin-right: 75px;
+                    width: 33px;
+                    height: 33px;
+                    position: relative;
+
+                    &::before {
+                        @include ellipse();
+                    }
+                }
+
+            }
+
+            .img__apple {
+                margin-top: 7px;
+            }
+
+            .bars {
+                .text {
+                    margin-top: 44px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+
+                    &:first-child {
+                        margin-top: 0;
+                    }
+                }
+
+                span {
+                    font-weight: normal;
+                    color: $grey;
+                }
+
+                .exp {
+                    width: 554px;
+                    height: 11px;
+                }
+
+                .exp1 {
+                    background: linear-gradient(90deg, $orange 88%, #e0e0e0 12%);
+                }
+
+                .exp2 {
+                    background: linear-gradient(90deg, $orange 76%, #e0e0e0 24%);
+                }
+
+                .exp3 {
+                    background: linear-gradient(90deg, $orange 81%, #e0e0e0 19%);
+                }
+
+                .exp4 {
+                    background: linear-gradient(90deg, $orange 71%, #e0e0e0 29%);
+                }
+            }
+
+            .img__bg {
+                position: relative;
+                width: 451px;
+                height: 255px;
+                background: url(../images/rabota.JPg);
+                background-size: 100%;
+                border-radius: 15px;
+                img {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+
+    &-skills-img {
+        width: 100px;
+    }
+
+    &__line {
+        height: 3px;
+        background: #E6E6E6;
+        width: 100%;
+        margin: 119px 0;
+    }
+}

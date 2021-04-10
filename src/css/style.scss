@@ -1,0 +1,25 @@
+@import url(../libs/bootstrap/css/bootstrap.min.css);
+@import url(../libs/fonawesome/css/all.min.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #0d0d0d;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+@import "../scss/adaptive-value";
+@import "../scss/variables";
+@import "../scss/header";
+@import "../scss/home";
+@import "../scss/about";
+@import "../scss/skills";
+@import "../scss/quote";
+@import "../scss/team";
