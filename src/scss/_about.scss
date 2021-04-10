@@ -101,18 +101,8 @@
             }
 
             .img__bg {
-                position: relative;
-                width: 451px;
-                height: 255px;
-                background: url(../images/work.jpeg);
-                background-size: 100%;
+                width: 100%;
                 border-radius: 15px;
-                img {
-                    position: absolute;
-                    left: 50%;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                }
             }
         }
     }

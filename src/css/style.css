@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url(../libs/bootstrap/css/bootstrap.min.css);
-@import url(../libs/fonawesome/css/all.min.css);
+@import url(../libs/fontawesome/css/all.min.css);
 @import url(https://unpkg.com/aos@2.3.1/dist/aos.css);
 * {
   padding: 0;
@@ -291,21 +291,8 @@ body {
 }
 
 .about .row .col .img__bg {
-  position: relative;
-  width: 451px;
-  height: 255px;
-  background: url(../images/rabota.JPg);
-  background-size: 100%;
+  width: 100%;
   border-radius: 15px;
-}
-
-.about .row .col .img__bg img {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
 }
 
 .about-skills-img {
